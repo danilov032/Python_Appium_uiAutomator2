@@ -1,4 +1,6 @@
 from appium import webdriver
+from app.application import Application
+from const import Const
 
 
 def before_scenario(context, scenario):
@@ -6,7 +8,7 @@ def before_scenario(context, scenario):
         "deviceName": "Test",
         "platformName": "Android",
         "platformVersion": "10",
-        "app": "/Users/danilov.and/Documents/Python_Appium_uiAutomator2/app/Википедия_base.apk",
+        "apk": Const.APP_PATH_FILE,
         "noReset": "true",
         "unicodeKeyboard": "true",
         "useNewWDA": "false",
@@ -15,8 +17,8 @@ def before_scenario(context, scenario):
     }
 
     context.driver = webdriver.Remote('http://127.0.0.1:5901/wd/hub', desired_capabilities=desired_capabilities)
-
     context.driver.implicitly_wait(10)
+    context.app = Application(context.driver)
 
 
 def after_scenario(context, scenario):

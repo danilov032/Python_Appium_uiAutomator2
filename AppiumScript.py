@@ -1,17 +1,15 @@
-import time
-
+from const import Const
 from appium import webdriver
-from selenium.webdriver.common.by import By
 
 desired_capabilities = {
     "deviceName": "Test",
     "platformName": "Android",
     "platformVersion": "10",
-    "app": "/Users/danilov.and/Documents/Python_Appium_uiAutomator2/app/Википедия_base.apk",
-    "noReset": "true",
-    "unicodeKeyboard": "true",
-    "useNewWDA": "false",
-    "usePrebuiltWDA": "true",
+    "apk": Const.APP_PATH_FILE,
+    # "noReset": "true",
+    # "unicodeKeyboard": "true",
+    # "useNewWDA": "false",
+    # "usePrebuiltWDA": "true",
     "automationName": "UiAutomator2"
 }
 

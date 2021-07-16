@@ -1,2 +1,4 @@
-/app
+*apk
 /.idea
+const.py
+/__pycache__
