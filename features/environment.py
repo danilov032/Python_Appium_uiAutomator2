@@ -8,7 +8,7 @@ def before_scenario(context, scenario):
         "deviceName": "Test",
         "platformName": "Android",
         "platformVersion": "10",
-        "apk": Const.APP_PATH_FILE,
+        "app": Const.APP_PATH_FILE,
         "noReset": "true",
         "unicodeKeyboard": "true",
         "useNewWDA": "false",

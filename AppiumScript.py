@@ -5,11 +5,11 @@ desired_capabilities = {
     "deviceName": "Test",
     "platformName": "Android",
     "platformVersion": "10",
-    "apk": Const.APP_PATH_FILE,
-    # "noReset": "true",
-    # "unicodeKeyboard": "true",
-    # "useNewWDA": "false",
-    # "usePrebuiltWDA": "true",
+    "app": Const.APP_PATH_FILE,
+    "noReset": "true",
+    "unicodeKeyboard": "true",
+    "useNewWDA": "false",
+    "usePrebuiltWDA": "true",
     "automationName": "UiAutomator2"
 }
 
