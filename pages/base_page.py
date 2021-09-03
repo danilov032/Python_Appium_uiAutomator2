@@ -6,6 +6,9 @@ class Page:
     def find_element(self, *locator):
         return self.driver.find_element(*locator)
 
+    # def find_elements(self, *locator):
+    #     return self.driver.find_elements(*locator)[1]
+
     def click(self, *locator):
         e = self.driver.find_element(*locator)
         e.click()

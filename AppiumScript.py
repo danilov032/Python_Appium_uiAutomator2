@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from const import Const
 from appium import webdriver
 
