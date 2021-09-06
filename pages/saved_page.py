@@ -7,5 +7,5 @@ class SavedPage(Page):
     EMPTY_MESSAGE = (By.ID, "empty_message")
 
     def check_empty_page(self):
-        # if self.driver.find_element(*self.EMPTY_MESSAGE)
-# Дописать проверку есть ли элемент
+        el = self.driver.find_element(*self.EMPTY_MESSAGE)
+        assert el is not None, "Элемент отсутвует"
